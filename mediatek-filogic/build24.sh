@@ -45,10 +45,10 @@ echo "$(date '+%Y-%m-%d %H:%M:%S') - Starting build process..."
 
 
 # 定义所需安装的包列表 下列插件你都可以自行删减
-PACKAGES="luci-i18n-attendedsysupgrade-zh-cn"
-PACKAGES="luci-i18n-ddns-zh-cn"
-PACKAGES="luci-i18n-samba4-zh-cn"
-PACKAGES="luci-i18n-upnp-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-attendedsysupgrade-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-ddns-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
+PACKAGES="$PACKAGES luci-i18n-upnp-zh-cn"
 PACKAGES=""
 PACKAGES=""
 PACKAGES=""
