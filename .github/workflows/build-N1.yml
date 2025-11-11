@@ -1,6 +1,5 @@
 name: build-N1
 on:
-  repository_dispatch:
   workflow_dispatch:
     inputs:
       luci_version:
@@ -161,9 +160,9 @@ jobs:
           echo "file=$ROOTFS_FILE" >> $GITHUB_OUTPUT
 
       - name: Package armsr-armv8 as ImmortalWrt for N1
-        uses: ophub/amlogic-s9xxx-openwrt@master
         if: ${{ steps.down.outputs.status }} == 'success' && !cancelled()
-        env:
+        uses: ophub/amlogic-s9xxx-openwrt@master
+        with:
           openwrt_path: ${{ steps.find_rootfs.outputs.file }}
           openwrt_board: s905d
           openwrt_kernel: ${{ inputs.openwrt_kernel }}
