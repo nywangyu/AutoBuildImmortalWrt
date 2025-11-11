@@ -163,13 +163,13 @@ jobs:
         uses: ophub/amlogic-s9xxx-openwrt@master
         if: ${{ steps.down.outputs.status }} == 'success' && !cancelled()
         env:
-          OPENWRT_ARMVIRT: ${{ steps.find_rootfs.outputs.file }}
-          PACKAGE_SOC: s905d
+          openwrt_path: ${{ steps.find_rootfs.outputs.file }}
+          openwrt_board: s905d
           openwrt_kernel: ${{ inputs.openwrt_kernel }}
           auto_kernel: ${{ inputs.auto_kernel }}
           kernel_repo: ${{ inputs.kernel_repo }}
           kernel_usage: ${{ inputs.kernel_usage }}
-          WHOAMI: ${{ inputs.builder_name }}
+          builder_name: ${{ inputs.builder_name }}
 
       - name: Rename .img.gz file
         id: rename
