@@ -151,7 +151,7 @@ jobs:
 
       - name: Package armsr-armv8 as ImmortalWrt for N1
         if: ${{ steps.down.outputs.status }} == 'success' && !cancelled()
-        uses: ophub/amlogic-s9xxx-openwrt@master
+        uses: ophub/amlogic-s9xxx-openwrt@main
         with:
           openwrt_path: ${{ steps.find_rootfs.outputs.file }}
           openwrt_board: s905d
