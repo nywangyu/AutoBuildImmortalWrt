@@ -48,3 +48,5 @@ CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-taskplan luci-i18n-taskplan-zh-cn"
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES easytier luci-i18n-easytier-zh-cn"
 # 统一文件共享
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES webdav2 luci-app-unishare"
+# IPTV 流媒体转发服务器 - rtp2httpd by stackia
+#CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-rtp2httpd luci-i18n-rtp2httpd-zh-cn"
