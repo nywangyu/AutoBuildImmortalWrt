@@ -37,6 +37,11 @@ pppoe_account=${PPPOE_ACCOUNT}
 pppoe_password=${PPPOE_PASSWORD}
 EOF
 
+cat >> .config <<EOF
+# CONFIG_PACKAGE_apk-openssl is not set
+# CONFIG_USE_APK is not set
+EOF
+
 echo "cat pppoe-settings"
 cat /home/build/immortalwrt/files/etc/config/pppoe-settings
 
