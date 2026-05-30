@@ -8,7 +8,7 @@
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES quickstart luci-app-quickstart"
 # 极光主题 by github eamonxg
 CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-theme-aurora"
-CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-aurora-config luci-i18n-aurora-config-zh-cn"
+CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-aurora-config"
 # 分区扩容 by sirpdboy 
 #CUSTOM_PACKAGES="$CUSTOM_PACKAGES luci-app-partexp luci-i18n-partexp-zh-cn"
 # 流量监控 by timsaya
