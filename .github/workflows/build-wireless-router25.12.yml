@@ -11,6 +11,7 @@ on:
         options:
           # 京东云AX6000百里
           - jdcloud_re-cp-03
+          - qihoo_360V6
         default: jdcloud_re-cp-03
       custom_router_ip:
         description: "请设置路由器的管理地址 格式:192.168.x.1 或 10.x.x.1"
@@ -96,8 +97,8 @@ jobs:
           ipq807x_models=$(cat model/ipq807x.txt | tr '\n' '|')
           ipq807x_models=${ipq807x_models%|}
           if [[ "$profile" =~ ^($ipq807x_models)$ ]]; then
-              case_tag="qualcommax-ipq807x-openwrt-25.12.0"
-              case_platform="qualcommax/ipq807x"
+              case_tag="qualcommax-ipq60xx-openwrt-25.12.1"
+              case_platform="qualcommax/ipq60xx"
           fi
 
           # 读取 mt7621 机型文件
