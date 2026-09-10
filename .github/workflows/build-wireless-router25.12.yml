@@ -97,7 +97,7 @@ jobs:
           ipq807x_models=$(cat model/ipq807x.txt | tr '\n' '|')
           ipq807x_models=${ipq807x_models%|}
           if [[ "$profile" =~ ^($ipq807x_models)$ ]]; then
-              case_tag="qualcommax-ipq60xx-openwrt-25.12.1"
+              case_tag="qualcommax-ipq60xx-openwrt-25.12.2"
               case_platform="qualcommax/ipq60xx"
           fi
 
@@ -156,7 +156,7 @@ jobs:
                       echo "platform=$case_platform" >> $GITHUB_ENV
                   else
                       # 默认分支
-                      tag=mediatek-filogic-openwrt-25.12.1
+                      tag=mediatek-filogic-openwrt-25.12.2
                   fi
                   ;;
             esac
